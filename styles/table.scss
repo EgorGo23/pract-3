@@ -1,0 +1,55 @@
+$fontSize: 18px;
+$blue: #00A4F7;
+$hoverBlue: #12608d;
+
+.table {
+    border-collapse: collapse;
+    font-size: $fontSize;
+    width: 300px;
+    color: $blue;
+
+    th, td {
+        padding: 20px;
+        border: 2px solid rgb(126, 123, 123);
+    }
+
+    td {
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+            color: $hoverBlue;
+        }
+    }   
+}
+
+.table_disabled {
+    opacity: 0.5;
+    user-select: none;
+
+    td {
+        cursor: auto;
+
+        &:hover {
+            color: $blue; 
+            
+        }
+    }
+}
+
+
+.table_display_none {
+    display: none;
+}
+
+.table_display_block {
+    display: block;
+}
+
+.table_display_flex {
+    display: flex;
+}
+
+.table_display_table {
+    display: table;
+}

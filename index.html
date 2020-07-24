@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='app'>
+        <div class='menu'>
+            <div class='menu__header header'>
+                <span class='header__text'>Menu</span>
+            </div>
+            <ul class='menu__list list-main-level'>
+                <li class='list-main-level__item item'>Раздел 1</li>
+                <li class='list-main-level__item item'>Раздел 2
+                    <ul class='menu__list list-second-level'>
+                        <li class='list-second-level__item item'>Раздел 2.1</li>
+                        <li class='list-second-level__item item'>Раздел 2.2</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class='panel'>
+            <div class='panel__header'></div>
+            <button class='panel__btn'>Test start</button>
+        </div>
+        <div class='panel super-panel'>
+            <div class='super-panel panel__header'></div>
+            <table class='table'>
+                <thead class='table__head'>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                    </tr>
+                </thead>
+                <tbody class='table__body body'>
+                    <tr>
+                        <td class="body__item">James</td>
+                        <td class="body__item">Maxwell</td>
+                    </tr>
+                    <tr>
+                        <td class="body__item">James</td>
+                        <td class="body__item">Maxwell</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src='./modules/utils.js'></script>
+    <script src='./modules/app.js'></script>
+</body>
+</html>

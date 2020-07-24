@@ -1,0 +1,17 @@
+$red: #dc3545;
+$green: #28a745;
+
+.super-panel {
+    height: 230px;
+    bottom: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid $green;
+
+    .table {
+        position: absolute;
+        bottom: 10px;
+    }
+}
